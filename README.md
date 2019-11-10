@@ -41,7 +41,7 @@ class User < ApplicationRecord
 end
 
 # config/initializers/devise.rb
-config.omniauth :keycloak_openid, "Example-Client-Name", "example-secret-if-configured", client_options: { site: "https://example.keycloak-url.com", realm: "example-realm" }, :strategy_class => OmniAuth::Strategies::KeycloakOpenId
+config.omniauth :keycloakopenid, "Example-Client-Name", "example-secret-if-configured", client_options: { site: "https://example.keycloak-url.com", realm: "example-realm" }, :strategy_class => OmniAuth::Strategies::KeycloakOpenId
 
 # Below controller assumes callback route configuration following 
 # in config/routes.rb
